@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Halal - متجر الإلكترونيات الحديث</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- شاشة الترحيب -->
+    <div id="welcome-screen">
+        <div class="welcome-logo"></div>
+        <h1 class="welcome-text" data-en="Welcome to Store Halal" data-fr="Bienvenue à Store Halal" data-ar="أهلاً بك في متجر هالال">أهلاً بك في متجر هالال</h1>
+        <p class="welcome-subtext" data-en="Your gateway to the latest electronics" data-fr="Votre passerelle vers les dernières électroniques" data-ar="بوابتك لأحدث الإلكترونيات">بوابتك لأحدث الإلكترونيات</p>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- الترويسة -->
+    <header>
+        <div class="header-top">
+            <a href="#" class="logo">
+                <div class="logo-icon">🛒</div>
+                <span data-en="Store Halal" data-fr="Store Halal" data-ar="متجر هالال">متجر هالال</span>
+            </a>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="ar">🇸🇦</button>
+                <button class="lang-btn" data-lang="en">🇺🇸</button>
+                <button class="lang-btn" data-lang="fr">🇫🇷</button>
+            </div>
+        </div>
+        <nav class="header-bottom">
+            <a href="#" class="nav-link active" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">الرئيسية</a>
+            <a href="#products" class="nav-link" data-en="Products" data-fr="Produits" data-ar="المنتجات">المنتجات</a>
+            <a href="#" class="nav-link" data-en="New Arrivals" data-fr="Nouveautés" data-ar="وصل حديثاً">وصل حديثاً</a>
+            <a href="#" class="nav-link" data-en="Support" data-fr="Support" data-ar="الدعم">الدعم</a>
+            <a href="#" class="nav-link" data-en="Contact" data-fr="Contact" data-ar="اتصل بنا">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <!-- قسم البطل -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-en="Discover the Future of Technology" data-fr="Découvrez le futur de la technologie" data-ar="اكتشف مستقبل التقنية">اكتشف مستقبل التقنية</h1>
+                <p data-en="Experience the latest electronic devices with 3D technology and exceptional quality. Fast shipping and excellent service." data-fr="Découvrez les derniers appareils électroniques avec une technologie 3D et une qualité exceptionnelle. Livraison rapide et excellent service." data-ar="اكتشف أحدث الأجهزة الإلكترونية بتقنية ثلاثية الأبعاد وبجودة استثنائية. شحن سريع وخدمة مميزة.">اكتشف أحدث الأجهزة الإلكترونية بتقنية ثلاثية الأبعاد وبجودة استثنائية. شحن سريع وخدمة مميزة.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToProducts()">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span data-en="Shop Now" data-fr="Acheter maintenant" data-ar="تسوق الآن">تسوق الآن</span>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        <span data-en="Watch Video" data-fr="Regarder la vidéo" data-ar="شاهد الفيديو">شاهد الفيديو</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-3d">
+                <div class="hero-card">
+                    <div class="hero-product">📱</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="products" class="products-section">
+        <div class="section-header">
+            <h2 data-en="Trending Electronics 2026" data-fr="Électroniques tendance 2026" data-ar="الإلكترونيات الأكثر شهرة 2026">الإلكترونيات الأكثر شهرة 2026</h2>
+            <p data-en="Discover the most popular electronic products of the year" data-fr="Découvrez les produits électroniques les plus populaires de l'année" data-ar="اكتشف المنتجات الإلكترونية الأكثر شعبية هذا العام">اكتشف المنتجات الإلكترونية الأكثر شعبية هذا العام</p>
+        </div>
+        <div class="products-grid" id="products-grid">
+            <!-- المنتجات ستُضاف هنا بواسطة JavaScript -->
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-en="Store Halal" data-fr="Store Halal" data-ar="متجر هالال">متجر هالال</h3>
+                <p data-en="Your trusted destination for the latest electronics" data-fr="Votre destination de confiance pour les dernières électroniques" data-ar="وجهتك الموثوقة لأحدث الإلكترونيات">وجهتك الموثوقة لأحدث الإلكترونيات</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-en="Quick Links" data-fr="Liens rapides" data-ar="روابط سريعة">روابط سريعة</h3>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3 data-en="Contact" data-fr="Contact" data-ar="اتصل بنا">اتصل بنا</h3>
+                <p>📍 Algeria</p>
+                <p>📞 +213 776 381 796</p>
+                <p>✉️ info@storehalal.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-en="© 2026 Store Halal. All rights reserved." data-fr="© 2026 Store Halal. Tous droits réservés." data-ar="© 2026 متجر هالال. جميع الحقوق محفوظة.">© 2026 متجر هالال. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- نافذة تفاصيل المنتج -->
+    <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-body">
+                <div class="modal-image" id="modal-image"></div>
+                <div class="modal-info">
+                    <span class="modal-category" id="modal-category"></span>
+                    <h2 class="modal-name" id="modal-name"></h2>
+                    <div class="modal-specs" id="modal-specs"></div>
+                    <p class="modal-description" id="modal-description"></p>
+                    <div class="modal-price" id="modal-price"></div>
+                    
+                    <div class="quantity-selector">
+                        <label data-en="Quantity:" data-fr="Quantité:" data-ar="الكمية:">الكمية:</label>
+                        <div class="quantity-controls">
+                            <button onclick="changeQuantity(-1)">−</button>
+                            <input type="number" id="quantity" value="1" min="1" max="99" onchange="updateTotalPrice()">
+                            <button onclick="changeQuantity(1)">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-total" id="modal-total"></div>
+                    
+                    <button class="btn btn-whatsapp" onclick="orderViaWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-en="Order Now" data-fr="Commander maintenant" data-ar="اطلب الآن">اطلب الآن</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
